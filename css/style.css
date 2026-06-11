@@ -215,6 +215,9 @@ ul {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.15rem;
@@ -222,6 +225,11 @@ ul {
   color: var(--white);
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.logo img {
+  height: 44px;
+  width: auto;
 }
 
 .logo span {
@@ -298,7 +306,9 @@ ul {
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 100%);
+  background:
+    linear-gradient(160deg, rgba(9, 24, 49, .94) 0%, rgba(14, 34, 64, .88) 100%),
+    url("../img/hero-equipe.jpg") center / cover no-repeat;
   color: var(--white);
   text-align: center;
   padding: 4.5rem 0 5.5rem;
@@ -453,33 +463,24 @@ ul {
   color: var(--gold);
 }
 
-/* ---------- Placeholders d'images ---------- */
-.img-placeholder {
-  background: linear-gradient(160deg, var(--navy-deep), var(--navy));
+/* ---------- Images de contenu ---------- */
+.about__img,
+.service-block__media img,
+.wide-banner {
+  width: 100%;
+  height: auto;
   border-radius: var(--radius);
-  color: var(--gold-light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: .6rem;
-  min-height: 220px;
-  text-align: center;
-  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  object-fit: cover;
 }
 
-.img-placeholder i {
-  font-size: 2.25rem;
-  color: var(--gold);
+.wide-banner {
+  margin-top: 1.75rem;
 }
 
-.img-placeholder span {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: .85rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, .85);
+.media-stack {
+  display: grid;
+  gap: 1rem;
 }
 
 /* ---------- Qui sommes-nous ---------- */
@@ -548,9 +549,12 @@ ul {
   text-align: center;
 }
 
-.ref-card .img-placeholder {
-  min-height: 110px;
-  margin-bottom: 1rem;
+.ref-card__img {
+  height: 110px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto 1rem;
 }
 
 .ref-card__name {
@@ -726,10 +730,14 @@ ul {
   box-shadow: var(--shadow-card);
 }
 
-.highlight-banner i {
-  font-size: 1.75rem;
+.highlight-banner img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--white);
   display: block;
-  margin-bottom: .5rem;
+  margin: 0 auto .75rem;
+  box-shadow: 0 4px 16px rgba(14, 34, 64, .25);
 }
 
 .highlight-banner strong {
@@ -877,6 +885,12 @@ ul {
   display: grid;
   gap: 2rem;
   padding-bottom: 2.5rem;
+}
+
+.footer__logo {
+  height: 80px;
+  width: auto;
+  margin-bottom: .65rem;
 }
 
 .footer__script {

@@ -1,16 +1,22 @@
 # Images du site
 
-Déposer ici les vraies photos avec **exactement** ces noms de fichiers
-(le HTML contient des commentaires indiquant où remplacer chaque placeholder) :
+Images officielles utilisées par le site :
 
-- `hero-equipe.jpg` — photo de l'équipe (section « Qui sommes-nous ? »)
-- `nettoyage-industriel.jpg` — nettoyage industriel et commercial
-- `blanchisserie.jpg` — blanchisserie industrielle
-- `marbre.jpg` — ponçage / traitement du marbre
-- `desinfection.jpg` — hygiène & désinfection
-- `fin-chantier.jpg` — nettoyage de fin de chantier
-- `bureaux.jpg` — nettoyage de bureaux & conciergerie
-- `facade-pressing.jpg` — façade du pressing
-- `client-prodiges.png` — logo Prodiges Hôtel
-- `client-allodocteur.png` — logo Allô Docteur
-- `client-prima.png` — logo Laboratoire Prima
+| Fichier | Emplacement |
+|---|---|
+| `logo.png` | Header et footer de toutes les pages (version claire pour fond navy) |
+| `logo-fonce.png` | Version foncée du logo, en réserve pour fonds clairs |
+| `hero-equipe.jpg` | Fond du hero (accueil) + section « Traitement & rénovation des surfaces » |
+| `facade-pressing.jpg` | Section « Qui sommes-nous ? » (accueil) |
+| `equipe-bureaux.jpg` | Bannière de la section « Pourquoi choisir Clean Imperial ? » (accueil) |
+| `client-prodiges.png` | Référence Prodiges Hôtel (accueil) |
+| `client-allodocteur.png` | Référence Allô Docteur (accueil) |
+| `client-prima.png` | Référence Laboratoire Prima (accueil) |
+| `bureaux.jpg` | Services — Nettoyage professionnel |
+| `nettoyage-industriel.jpg` | Services — Nettoyage industriel et commercial |
+| `produits.png` | Services — Entretien industriel & blanchisserie |
+| `conciergerie.jpg` | Services — Nettoyage de bureaux & conciergerie |
+| `assainissement.jpg` | Services — Hygiène & désinfection / Assainissement |
+| `desinfection.jpg` | Services — Hygiène & désinfection / Assainissement |
+| `fin-chantier.jpg` | Services — Nettoyage de fin de chantier |
+| `costume.png` | Tarifs — bandeau « Nettoyage complet Costume 3 000 F » |
