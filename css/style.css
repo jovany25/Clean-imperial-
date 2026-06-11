@@ -377,10 +377,17 @@ ul {
 /* ---------- Page hero (pages internes) ---------- */
 .page-hero {
   position: relative;
-  background: linear-gradient(160deg, var(--navy-deep), var(--navy));
+  background:
+    linear-gradient(160deg, rgba(9, 24, 49, .88) 0%, rgba(14, 34, 64, .78) 100%),
+    url("../img/hero-equipe.jpg") center / cover no-repeat;
   color: var(--white);
   text-align: center;
-  padding: 3rem 0 3.75rem;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.25rem;
 }
 
 .page-hero::after {
@@ -402,9 +409,11 @@ ul {
   letter-spacing: 2px;
 }
 
-.page-hero__subtitle {
-  color: rgba(255, 255, 255, .8);
-  margin-top: .5rem;
+.page-hero__script {
+  font-family: var(--font-script);
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  color: var(--gold-light);
+  margin-top: .25rem;
 }
 
 /* ---------- Cartes & grilles ---------- */
@@ -1017,6 +1026,10 @@ ul {
 @media (min-width: 900px) {
   .section {
     padding: 5rem 0;
+  }
+
+  .page-hero {
+    height: 260px;
   }
 
   .nav-toggle {
