@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; devis gratuit — Clean Imperial Yaoundé</title>
+  <meta name="description" content="Contactez Clean Imperial à Yaoundé – Awae, Carrefour Monti : (+237) 694 96 29 48 / 651 68 68 68, cleanimperialcmr@gmail.com. Demandez votre devis gratuit en ligne ou sur WhatsApp.">
+  <meta property="og:title" content="Contact — Clean Imperial">
+  <meta property="og:description" content="Demandez votre devis gratuit : nettoyage professionnel, pressing, blanchisserie, désinfection à Yaoundé.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Clean <span>Imperial</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="index.html" class="nav__link">Accueil</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="tarifs.html" class="nav__link">Tarifs</a>
+        <a href="contact.html" class="nav__link" aria-current="page">Contact</a>
+        <a href="#devis" class="btn btn--gold">Demander un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">Contactez-nous</h1>
+        <p class="page-hero__subtitle">Une question, un besoin&nbsp;? Demandez votre devis gratuit</p>
+      </div>
+    </section>
+
+    <!-- Coordonnées -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title section-title--center">Nos coordonnées</h2>
+        <div class="grid grid--2 grid--4">
+          <div class="contact-card reveal">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <h3 class="contact-card__title">Téléphones</h3>
+            <p><a href="tel:+237694962948">(+237) 694 96 29 48</a><br><a href="tel:+237651686868">(+237) 651 68 68 68</a></p>
+          </div>
+          <div class="contact-card reveal">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <h3 class="contact-card__title">WhatsApp</h3>
+            <p><a href="https://wa.me/237651686868?text=Bonjour%20Clean%20Imperial,%20je%20souhaite%20un%20devis" target="_blank" rel="noopener">+237 651 68 68 68</a></p>
+          </div>
+          <div class="contact-card reveal">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <h3 class="contact-card__title">Email</h3>
+            <p><a href="mailto:cleanimperialcmr@gmail.com">cleanimperialcmr@gmail.com</a></p>
+          </div>
+          <div class="contact-card reveal">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <h3 class="contact-card__title">Adresse</h3>
+            <p>Yaoundé – Awae, Carrefour Monti<br>(Façade Prodiges Hôtel)</p>
+          </div>
+        </div>
+
+        <!-- Carte Google Maps : embed générique de Yaoundé en attendant les coordonnées exactes -->
+        <div class="map-wrapper reveal">
+          <iframe
+            src="https://www.google.com/maps?q=Awae,+Yaound%C3%A9,+Cameroun&output=embed"
+            title="Carte — Clean Imperial, Yaoundé Awae, Carrefour Monti"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulaire de devis -->
+    <section class="section section--off" id="devis">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="reveal">
+            <p class="section-subtitle">Devis gratuit</p>
+            <h2 class="section-title">Demandez votre devis</h2>
+            <p>Remplissez le formulaire et notre équipe vous recontactera rapidement avec une proposition adaptée à vos besoins. Pour une réponse immédiate, contactez-nous directement sur WhatsApp.</p>
+            <p style="margin-top:1rem;">
+              <a href="https://wa.me/237651686868?text=Bonjour%20Clean%20Imperial,%20je%20souhaite%20un%20devis" class="btn btn--whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Devis via WhatsApp</a>
+            </p>
+          </div>
+
+          <!-- Formspree : remplacer VOTRE_ID par l'identifiant de votre formulaire
+               (créez un formulaire gratuit sur https://formspree.io puis copiez l'ID) -->
+          <form class="form reveal" action="https://formspree.io/f/VOTRE_ID" method="POST">
+            <div>
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" autocomplete="tel" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="service">Type de service</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>— Choisissez un service —</option>
+                <option>Pressing / Blanchisserie</option>
+                <option>Nettoyage professionnel</option>
+                <option>Nettoyage industriel</option>
+                <option>Désinfection</option>
+                <option>Traitement des surfaces</option>
+                <option>Fin de chantier</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold">Envoyer ma demande</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Réseaux sociaux -->
+    <section class="section">
+      <div class="container" style="text-align:center;">
+        <h2 class="section-title section-title--center">Suivez-nous</h2>
+        <p>Retrouvez <strong>Clean Impérial</strong> sur les réseaux sociaux.</p>
+        <!-- Liens placeholders : remplacer # par les vraies URLs des comptes « Clean Impérial » -->
+        <div class="socials reveal">
+          <a href="#" aria-label="Facebook — Clean Impérial"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram — Clean Impérial"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="TikTok — Clean Impérial"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+          <a href="#" aria-label="X — Clean Impérial"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="LinkedIn — Clean Impérial"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="logo">Clean <span>Imperial</span></p>
+        <p class="footer__script">L'Empereur du Nettoyage</p>
+        <p>L'excellence du nettoyage professionnel et industriel.</p>
+      </div>
+      <div>
+        <h3 class="footer__heading">Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__heading">Contact</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+237694962948">(+237) 694 96 29 48</a></li>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+237651686868">(+237) 651 68 68 68</a></li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:cleanimperialcmr@gmail.com">cleanimperialcmr@gmail.com</a></li>
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Yaoundé – Awae, Carrefour Monti (Façade Prodiges Hôtel)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__heading">Nos 4 piliers</h3>
+        <ul>
+          <li><i class="fa-solid fa-broom" aria-hidden="true"></i> Propreté</li>
+          <li><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Santé</li>
+          <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Sécurité</li>
+          <li><i class="fa-solid fa-medal" aria-hidden="true"></i> Qualité</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> Clean Imperial — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/237651686868?text=Bonjour%20Clean%20Imperial,%20je%20souhaite%20un%20devis" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter Clean Imperial sur WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
